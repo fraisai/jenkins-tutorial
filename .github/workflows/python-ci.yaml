@@ -7,7 +7,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
+    step:
       - name: Checkout code
       uses: actions/checkout@v3 # telling github use the checkout action (reusable module from github marketplace)
 
