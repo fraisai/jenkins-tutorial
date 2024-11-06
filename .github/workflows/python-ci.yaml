@@ -7,14 +7,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    step:
+    steps:
       - name: Checkout code
-      uses: actions/checkout@v3 # telling github use the checkout action (reusable module from github marketplace)
+        uses: actions/checkout@v3 # telling github use the checkout action (reusable module from github marketplace)
 
       - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.9'
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
 
       - name: Install dependencies
         run: |
